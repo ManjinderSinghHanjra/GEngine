@@ -1,0 +1,39 @@
+varying vec2 pass_textureCoords
+
+varying vec4 outputColor
+
+uniform mat4 transformation_matrix
+
+uniform sampler2D textureSampler
+
+void main(void)
+{
+	outputColor =  texture(textureSampler, pass_textureCoords);
+	transformation_matrix
+}
+
+
+
+
+/*#version 440 core
+
+in vec2 pass_textureCoords
+
+out vec4 outputColor
+
+uniform mat4 transformation_matrix
+
+uniform sampler2D textureSampler
+
+void main(void)
+{
+	outputColor =  texture(textureSampler, pass_textureCoords);
+	transformation_matrix
+}
+
+*/
+/*varying vec3 colour;
+
+void main(void) {
+        gl_FragColor = vec4(colour, 1.0);
+}*/
